@@ -1,0 +1,51 @@
+#slideshow {
+  overflow: hidden;
+  height: 300px;
+  width: 800px;
+  margin:auto;
+	position: absolute; top: 115px;
+	
+}
+
+.slide-wrapper {
+  width: 3200px;
+  -webkit-animation: slide 18s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 300px;
+  width: 800px;
+}
+
+.slide:nth-child(1) {
+  background-image: url(../07_01_2019_14_05_12_Big-nokia-800-300.png);
+}
+
+.slide:nth-child(2) {
+  background-image: url(../05_01_2019_22_22_46_Big-huawei-800-300.png);
+}
+
+.slide:nth-child(3) {
+  background-image: url(../09_01_2019_13_33_43_Phu-kien-800-300.png);
+}
+
+.slide:nth-child(4) {
+  background-image: url(../30_12_2018_18_01_33_BigSS-800-300.png);
+}
+
+.slide-number {
+  color: #000;
+  text-align: center;
+  font-size: 10em;
+}
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -800px;}
+  50% {margin-left: -800px;}
+  60% {margin-left: -1600px;}
+  70% {margin-left: -1600px;}
+  80% {margin-left: -2400px;}
+  90% {margin-left: -2400px;}
+}
